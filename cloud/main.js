@@ -28,7 +28,7 @@ function checkUser(username, password, callback) {
             return callback(err, { result: 'failure' });
         } else {
             if (data &&
-                data.count) {
+                data.count > 0) {
                 console.log('success');
                 return callback(null, { result: 'success' });
             }
