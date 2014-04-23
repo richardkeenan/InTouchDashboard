@@ -10,21 +10,26 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/angular.js"></script>
+
     <script src="js/main.js"></script>
 
 </head>
 
-<body>
+<body ng-app="inTouchDashboardApp">
 
-<div class="input-group">
-    <span class="input-group-addon">@</span>
-    <input type="text" class="form-control" placeholder="Username">
+
+<div ng-controller="LoginController">
+
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Username" ng-model="username">
+        <input type="password" class="form-control" placeholder="Password" ng-model="password">
+    </div>
+
+    <button ng-click="login()">Login</button>
+
 </div>
 
-<div class="input-group input-group-sm">
-    <span class="input-group-addon">@</span>
-    <input type="text" class="form-control" placeholder="Username">
-</div>
 
 </body>
 
