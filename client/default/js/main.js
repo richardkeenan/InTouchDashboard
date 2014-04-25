@@ -8,8 +8,8 @@ app.config(function($routeProvider) {
             templateUrl : 'templates/login.html'
         })
 
-        .when('/ration', {
-            templateUrl : 'templates/ration.html'
+        .when('/home', {
+            templateUrl : 'templates/home.html'
         })
 
         .otherwise({
@@ -40,7 +40,7 @@ app.controller('LoginController', function($scope, $location, $cookieStore) {
                     $cookieStore.remove('session');
                 }
 
-                $location.path('/ration');
+                $location.path('/home');
 
                 $scope.$apply();
             },
@@ -63,7 +63,7 @@ app.controller('AppController', function($scope, $location, $cookieStore) {
     var session = $cookieStore.get('session');
 
     if (session) {
-        $location.path('/ration');
+        $location.path('/home');
     }
     else {
         $location.path('/login');

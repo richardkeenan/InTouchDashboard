@@ -19,7 +19,7 @@
 .menu{ width:100%; padding:0px;margin:0px 0 50px 0;}
 .menu ul{ list-style:none; padding:0px; margin:0px; width:100%;}
 .menu ul li{ list-style:none; margin:1% 0 2% 4%; padding:5.5% 0; width:28%;height:auto; float:left; display:block; text-align:center;
-    background-image: url(images/transparent_circle.png);
+    background-image: url(../images/transparent_circle.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -30,4 +30,13 @@
 .menu ul li a{ color:#FFFFFF; text-decoration:none;  text-align: center;}
 .menu ul li a span{ display:block; text-align:center; font-size:11px; line-height:15px;}
 .menu ul li img{ display:inline-block;max-width:50%;}
+/* Clearfix
+/*------------------------------------------*/
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+/* Hide from IE Mac \*/
+.clearfix { display: block; }
+/* End hide from IE Mac */
+.none { display: none; } /* End Clearfix */
+
 

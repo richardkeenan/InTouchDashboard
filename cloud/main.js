@@ -12,7 +12,7 @@ $fh.db({
         console.log(JSON.stringify(data));
     }
 });
-*/
+
 
 
  var initialData = require('./userapp.json');
@@ -28,6 +28,8 @@ $fh.db({
  console.log(JSON.stringify(data));
  }
  });
+
+ */
 
 
 
