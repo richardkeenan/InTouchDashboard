@@ -1,0 +1,33 @@
+.st_background{background: url(../images/bg-green.jpg) no-repeat center center;
+    background-attachment:fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/* Logo style
+/*------------------------------------------*/
+.logo{ text-align:center; margin:auto; padding:35px 0 25px 0;font-size:30px;}
+.logo img{max-width:65%;}
+.logo, .logo a{ color:#FFFFFF;}
+/* Menu style
+/*------------------------------------------*/
+.menu{ width:100%; padding:0px;margin:0px 0 50px 0;}
+.menu ul{ list-style:none; padding:0px; margin:0px; width:100%;}
+.menu ul li{ list-style:none; margin:1% 0 2% 4%; padding:5.5% 0; width:28%;height:auto; float:left; display:block; text-align:center;
+    background-image: url(images/transparent_circle.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.menu ul li a{ color:#FFFFFF; text-decoration:none;  text-align: center;}
+.menu ul li a span{ display:block; text-align:center; font-size:11px; line-height:15px;}
+.menu ul li img{ display:inline-block;max-width:50%;}
+

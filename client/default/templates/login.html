@@ -1,10 +1,15 @@
-<div ng-controller="LoginController">
+<div>
+    <div class="logo"><a href="#">
+        <img src="../images/login.png" alt="" title="" border="0" /></a></div>
+</div>
+<form ng-controller="LoginController">
 
     <div class="input-group">
-        <input type="text" class="form-control" placeholder="Username" ng-model="username">
-        <input type="password" class="form-control" placeholder="Password" ng-model="password">
+        <input type="text" class="form-control" placeholder="Username" ng-model="username" required><span style="color:red;">*</span>
+        <input type="password" class="form-control" placeholder="Password" ng-model="password" required><span style="color:red;">*</span>
+        <br/><br/><span style="color:red;">*=required</span>
     </div>
 
-    <button ng-click="login()">Login</button>
+    <button ng-click="login()" ng-disabled='!LoginController.$valid'>Login</button>
 
-</div>
+</form>

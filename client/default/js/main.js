@@ -70,4 +70,3 @@ app.controller('AppController', function($scope, $location, $cookieStore) {
     }
 
 });
-

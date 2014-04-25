@@ -14,6 +14,23 @@ $fh.db({
 });
 */
 
+
+ var initialData = require('./userapp.json');
+
+ $fh.db({
+ "act": "create",
+ "type": "userapp",
+ "fields": initialData
+ }, function(err, data) {
+ if (err) {
+ console.log('error: ',err);
+ } else {
+ console.log(JSON.stringify(data));
+ }
+ });
+
+
+
 function checkUser(username, password, callback) {
     $fh.db({
         "act": "list",
